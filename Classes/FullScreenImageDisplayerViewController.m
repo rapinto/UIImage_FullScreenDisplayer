@@ -332,6 +332,7 @@
 - (void)setupView
 {
     __weak __typeof(UIScrollView*)weakScrollView = _scrollView;
+    __weak __typeof(UIImageView*)weakImageView = _imageView;
     
     [_imageView setImageWithURL:_imageURL
                imageContentMode:UIViewContentModeScaleAspectFit
@@ -339,6 +340,8 @@
          placeholderContentMode:UIViewContentModeScaleAspectFit
                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
      {
+         weakImageView.contentMode = UIViewContentModeScaleAspectFit;
+         weakImageView.image = image;
          weakScrollView.zoomScale = 1.00f;
      }
                         failure:nil];
