@@ -332,15 +332,15 @@
 {
     __weak __typeof(UIScrollView*)weakScrollView = _scrollView;
     
-    [_imageView setImageWithProgressIndicatorAndURL:_imageURL
-                                   imageContentMode:UIViewContentModeScaleAspectFit
-                                   placeholderImage:_tapedImageView.image
-                             placeholderContentMode:UIViewContentModeScaleAspectFit
-                                imageDidAppearBlock:^(UIImageView *imageView)
+    [_imageView setImageWithURL:_imageURL
+               imageContentMode:UIViewContentModeScaleAspectFit
+               placeholderImage:_tapedImageView.image
+         placeholderContentMode:UIViewContentModeScaleAspectFit
+                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
      {
          weakScrollView.zoomScale = 1.00f;
-     }];
-    
+     }
+                        failure:nil];
     
     _isInterfaceDisplayed = YES;
     [self updateInterface];
