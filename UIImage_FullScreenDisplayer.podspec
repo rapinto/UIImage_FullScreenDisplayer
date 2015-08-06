@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UIImage_FullScreenDisplayer"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "UIImageView Category that allow full screen image display on UIImageView tap gesture."
 
   s.description  = <<-DESC
@@ -78,8 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git", :tag => "1.0.6"  }
-  s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git"  }
+  s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git", :tag => "1.0.7"  }
+  #s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git"  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
