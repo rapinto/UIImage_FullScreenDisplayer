@@ -29,8 +29,7 @@
 
 #import "FullScreenImageDisplayerViewController.h"
 #import <AppUtils/AppUtils.h>
-#import <UIImage+RPNetworking.h>
-
+#import <UIImage-RPNetworking/UIImage+RPNetworking.h>
 
 
 @interface FullScreenImageDisplayerViewController ()
