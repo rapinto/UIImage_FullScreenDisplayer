@@ -78,7 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git", :tag => "1.0.6"  }
+  #s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git", :tag => "1.0.6"  }
+  s.source       = { :git => "https://github.com/rapinto/UIImage_FullScreenDisplayer.git"  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,6 +134,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'AppUtils', '~> 1.0.0'
   s.dependency "AFNetworking", '~> 2.5'
-  s.dependency 'UIImage-RPNetworking', '~> 1.0.0'
+  s.dependency 'UIImage-RPNetworking', '~> 1.0.2'
 
 end
